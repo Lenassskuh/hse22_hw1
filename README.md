@@ -30,7 +30,8 @@ ls sub* matepairs* | xargs -tI{} fastqc -o fastqc {}
 mkdir multiqc
 multiqc -o multiqc fastqc
 ```
-
+![Скрин_1](https://github.com/Lenassskuh/hse22_hw1/blob/main/scrinshots/report1_1.png)
+![Скрин_2](https://github.com/Lenassskuh/hse22_hw1/blob/main/scrinshots/report1_2.png)
 
 - С помощью platanus_trim и platanus_internal_trim подрезаем чтение по качеству и удаляем адаптеры.
 ```
@@ -78,7 +79,7 @@ rm matepairs2.fastq.int_trimmed
 rm sub1.fastq.trimmed
 rm sub2.fastq.trimmed
 ```
-- Переносим все вы одну папку
+- Переносим все вы одну папку (делаем это, чтобы не запутаться в файлах при решении второй части)
 
 ```
 mkdir Main
@@ -93,27 +94,16 @@ mv mult* Main/
 ## Дополнительная часть
 ### Дополнительная сборка 1. Чтений в 2 раза меньше.
 
+- Создаю репозиторий, в котором буду дальше работать (я его назвала extra). Далее выполняю все те же самые команды, что и в основной части дз, только устанавливаю в 2 раза меньше чтений (то есть  2,5 миллиона чтений типа paired-end и  750 тысяч чтений типа mate-pairs)
 
+- Все действия в Google Collab можно посмотреть по прошлой ссылке (указано в основной части)
 
-- Ссылка на Google Colab та же.
-
- - Статистики:
-
-### Дополнительная сборка 2. Чтений в 4 раза меньше.
-
-- 
-
-- Ссылка на Google Colab та же.
-
- - Статистики:
+ - Теперь отчёт 
     - До 
+
     - После 
-    
-    - До 
-  
-    - После 
-    
-    
-    
+      
     
  ### Выводы
+ 
+ - Все выводы написаны в Google Collab
