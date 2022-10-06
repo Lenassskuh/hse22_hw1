@@ -53,16 +53,18 @@ ls sub* matepairs*| xargs -tI{} fastqc -o fastqc_trim {}
 mkdir multqctrim
 multiqc -o multqctrim fastqc_trim
 ```
-
+![Скрин_3](https://github.com/Lenassskuh/hse22_hw1/blob/main/scrinshots/report2_1.png)
+![Скрин_4](https://github.com/Lenassskuh/hse22_hw1/blob/main/scrinshots/report2_2.png)
 
 ### Анализ контигов и скаффолдов
 -С помощью “platanus assemble” собираем контиги из подрезанных чтений.
 ```
 time platanus assemble -o Poil -f sub1.fastq.trimmed sub2.fastq.trimmed 2> assemble.log
 ```
-Ссылка на Google Colab: 
+- Весь анализ полученной информации описан в Google Collab
+[Ссылка на Google Colab](https://colab.research.google.com/drive/1qhiuGcab-x0m6cAu6-73LbvK76gWbRMN?usp=sharing) 
 
-Или блокнот вы можете найти здесь: 
+[Ссылка на ноутбук](https://github.com/Lenassskuh/hse22_hw1/blob/main/src/H22_1__new.ipynb)
 
 - С помощью “platanus scaffold” собираем скаффолды из контигов, а также из подрезанных чтений.
 ```
@@ -100,10 +102,12 @@ mv mult* Main/
 
  - Теперь отчёт 
     - До 
-
+![Скрин_5](https://github.com/Lenassskuh/hse22_hw1/blob/main/scrinshots/report3_1.png)
+![Скрин_6](https://github.com/Lenassskuh/hse22_hw1/blob/main/scrinshots/report3_2.png)
     - После 
-      
+![Скрин_7](https://github.com/Lenassskuh/hse22_hw1/blob/main/scrinshots/report4_1.png)
+![Скрин_8](https://github.com/Lenassskuh/hse22_hw1/blob/main/scrinshots/report4_2.png)   
     
  ### Выводы
  
- - Все выводы написаны в Google Collab
+ - Все выводы написаны в Google Collab. Ссылка в основной части
