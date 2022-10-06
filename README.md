@@ -89,13 +89,6 @@ mv fast* Main/
 mv mult* Main/
 ```
 
-В папке MainTask создала папку platanus и перенесла туда файлы, созданные программой platanus.
-
-```
-mkdir platanus
-mv Poil* platanus/
-mv *.log platanus/
-```
 
 ## Дополнительная часть
 ### Дополнительная сборка 1. Чтений в 2 раза меньше.
